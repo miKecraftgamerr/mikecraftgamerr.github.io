@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matisse zijn website</title>
@@ -136,6 +137,48 @@
         .social-icons a:hover {
             color: #ffcc00;
         }
+
+        #subdomains {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 50px 20px;
+            margin-top: 30px;
+        }
+
+        #subdomains h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #subdomains .project-card {
+            max-width: 350px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        #subdomains .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        #subdomains .btn {
+            background: #ffcc00;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        #subdomains .btn:hover {
+            background: #e6b800;
+        }
     </style>
 </head>
 <body>
@@ -146,6 +189,7 @@
                 <li><a href="#about">Over Mij</a></li>
                 <li><a href="#projects">Projecten</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#subdomains">Subdomeinen</a></li>
             </ul>
         </nav>
     </header>
@@ -186,9 +230,30 @@
 
         <div class="social-icons">
             <a href="https://instagram.com/mtssbn" target="_blank">
-                <img src="./insta.png" alt="instagram" style="width: 5.45%; length: 5.45%">
+                <img src="./insta.png" alt="instagram" style="width: 5.45%; length: 5.45%"/>
             </a>
-            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </section>
+
+    <section id="subdomains">
+        <h2>Mijn Subdomeinen</h2>
+        <p>Bekijk al mijn projecten en subdomeinen:</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>To-Do lijst</h3>
+                <p>Bekijk mijn To-Do lijst:</p>
+                <a href="https://to-do.mbits.be" target="_blank" class="btn">Bekijk To-Do</a>
+            </div>
+            <div class="project-card">
+                <h3>Pihole</h3>
+                <p>Bekijk mijn Pihole:</p>
+                <a href="https://pihole.mbits.be" target="_blank"  class="btn">Bekijk Pihole</a>
+            </div>
+            <div class="project-card">
+                <h3>Andere Projecten</h3>
+                <p>Bekijk mijn andere subdomeinen:</p>
+                <a href="https://projects.jouwdomein.com" target="_blank" class="btn">Bekijk Projecten</a>
+            </div>
         </div>
     </section>
 
@@ -197,7 +262,7 @@
     </footer>
 
     <script>
-        // Example of JavaScript functionality: smooth scrolling
+        // Smooth scroll functionality
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -208,6 +273,4 @@
         });
     </script>
 </body>
-</html>
-
 </html>
